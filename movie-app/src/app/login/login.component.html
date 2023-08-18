@@ -1,0 +1,34 @@
+<div class="login-container">
+  <img class="film" src="assets/images/film.jpeg" alt="logo" />
+  <div class="logo">Rotten tomatoes</div>
+  <div class="desc">
+    Slowly these thoughts start troubling us like these rotten potatoes.You
+    carry these people and your hatred towards them all the time. Wherever you
+    go these rotten thoughts go with you. So, by carrying this anger and hatred
+    you are making your life miserable
+  </div>
+  <div class="login-group">
+    <div class="form-group">
+      <label for="uname">Username</label><br />
+      <input
+        type="text"
+        name="uname"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <button class="btn btn-dark" (click)="login()">Login</button>
+      <div class="error">{{ errorMsg }}</div>
+    </div>
+  </div>
+</div>
